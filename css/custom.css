@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/*!
+Date:  Created 12/23/2025
+Author:  Leo Randolph
+Created:  Provide the css customization options to go on top of the styles.css file.
+
+ */
+
+body { /* This is how comments work  */
+  background-color: white;
+}
+
+/*  Want to mess with the below function, cropping the image so that it has filleted corners or is maybe a circle, with a white outline.
+.masthead .masthead-avatar {
+  width: 15rem;
+}
+  Decided to make own "function" for this
+
+  */
+
+.masthead .profile-picture{
+    border-radius: 2.5rem;
+    border: 10px solid white;
+}
+
+.picturefillet{
+    border-radius : 2.5rem;
+}
+
+:root{
+
+    --bs-primary: #1B2452;
+    --bs-secondary: #1B2452;
+    --bs-primary-rgb: 27,36,82;
+    --bs-secondary-rgb: 27,36,82;
+}
+
+/*  divider settings, just using a line.  */
+.divider-custom {
+    --line-width:8em;
+  margin: 0.5rem 0 1rem;
+  width: 100%;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divider-custom .divider-custom-line {
+  width: 100%;
+  max-width: var(--line-width);
+  height: 0.25rem;
+  background-color: var(--bs-primary);
+  border-radius: 1rem;
+  border-color: var(--bs-primary);
+}
+
+/*  used instead of img-fluid, forces the width of the pictures to be 100% instead of just the max. */
+.portfolio-picture {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  padding-top: 3rem;
+  padding-bottom: 0rem;
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+
+
+
+
+
+/* Adjusting the color of the sliding bar at the top. */ 
+#mainNav .navbar-nav li.nav-item a.nav-link.active { 
+  color: white;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link:hover { /* Color while hovering over */
+  color: var(--bs-primary);
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+    color: #fff;
+    background: var(--bs-primary);
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+    color: #fff;
+    background: var(--bs-primary);
+}
+.portfolio .portfolio-item .portfolio-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color: white;
+}
+.portfolio .portfolio-item .portfolio-item-caption:hover {
+  opacity: 0.9;
+}
+
+.copyright {
+  background-color: var(--bs-primary);  
+}
+
+
+
+
